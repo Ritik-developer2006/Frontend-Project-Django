@@ -1,0 +1,56 @@
+{% load static %}
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="{% static 'pngwing.com (1).png' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Python + Django</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body class="bg-black text-white">
+    <div class="flex justify-center items-center h-screen">
+        <div>
+            <div class="flex flex-row gap-5 justify-center items-center mb-10">
+                <div class="w-32">
+                    <a href="https://www.python.org/" target="_blank"><img class="cursor-pointer rotating python" src="{% static 'pngwing.com (1).png' %}" alt=""></a>
+                </div>
+                <div class="w-32">
+                    <a href="https://www.djangoproject.com/" target="_blank"><img class="cursor-pointer django" src="{% static 'pngwing.com.png' %}" alt=""></a>
+                </div>
+            </div>
+            <div class="text-5xl flex justify-center items-center font-extrabold mt-10 mb-10">
+                Python + Django
+            </div>
+            <div class="flex justify-center mt-10 pt-5">
+                <button class="group my_button relative inline-flex cursor-pointer h-12 items-center justify-center overflow-hidden rounded-xl bg-neutral-950 px-6 font-medium text-neutral-200">
+                    <span class="font-bold">Count is <span id="clickCount">0</span></span>
+                    <div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+                        <div class="relative h-full w-8 bg-white/20"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="mt-5 flex justify-center items-center">
+                <div class="text-gray-200">
+                    Click on the Python and Django logos to learn more
+                </div>
+            </div>
+            <div class="mt-10 flex justify-center items-center text-gray-500 pt-10">
+                ©
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>, made with <span class="text-red-500 ms-1 me-1">
+                    <i class="tf-icons ri-heart-fill text-red-500"></i></span> by <span
+                    class='text-primary ms-1'>My Django</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>

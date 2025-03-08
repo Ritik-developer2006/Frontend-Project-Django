@@ -1,0 +1,24 @@
+.rotating {
+    animation: rotateAnimation 10s linear infinite;
+}
+
+.my_button:hover{
+    border: 1px solid #c6c6d6;
+}
+
+.python:hover{
+    filter: drop-shadow(0px 0px 30px rgba(224, 217, 217, 0.5));
+}
+
+.django:hover{
+    filter: drop-shadow(0px 0px 30px rgba(224, 217, 217, 0.3));
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
